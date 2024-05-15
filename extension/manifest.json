@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Show paid Grammarly Suggestions",
+    "description": "Shows paid Grammarly suggestions.",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"],
+        "run_at": "document_idle"
+          }
+    ],
+    "action": {
+      "default_title": "Show paid Grammarly Suggestions"
+    }
+  }
+  
